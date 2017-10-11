@@ -1,0 +1,105 @@
+Unit 1 - Drill: What Can Data Science Do?
+
+1. E-Commerce Company
+
+
+    Widget, Doodads and Fizzbangs
+    
+    I have data on individual visitors' sessions (activity on a website, pageviews, and purchases, as well as if those users
+    converted from an advertisement for that session. You also have the cost and price information for the goods.
+    
+    The question is: Which should be featured in our new advertising campaign?
+    
+    Questions I would ask:
+    
+    What is the goal of the ad campaign? 
+    Are we trying to simply drive revenue? 
+    Is one of the products in need of a boost in sales?
+    
+    Question I would try to answer:
+    
+    Which product nets the most revenue while converting the most when advertised?
+    
+    To make it statistically significant I would do a few things:
+    
+        Is a particular product selling more or less than the others?
+        Which SKU sells the most?
+        Which SKU sells the least?
+        Is a particular product converting higher/lower than the others?
+        Which one converts the most?
+        What is the conversion average across all ads and specific to each SKU?
+        Are advertisments driving sales or are people that organically search for the website driving sales?
+        What page is viewed the most?
+        Is there cart abandonment?
+        Which page do customers spend the most time on?
+        Which product would give us the most margin?
+        
+        
+2. Web Design Company
+
+
+    Steps: email/password signup, plan choice, payment
+    
+    On a user level I have information on what steps they have completed as well as timestamps for all of those events for the
+    past 3 years. I also have information on marketing spend on a weekly level.
+    
+    Question: 
+    
+    Find out why signups have slowed.
+    
+    Questions I would ask:
+    
+    Did we implement a new page (email and username?) that slowed signups?
+    Did we change the price of the plans?
+    
+    To make it statistically significant I would do a few things: 
+    
+    How much time is spent on each page?
+        This will tell us if there is cart abandonment.
+    How quickly does someone start and finish the process by week?
+    When exactly did signups start slowing?
+    How do weekly spend and signups compare when overlayed?
+    
+    
+3. Hotel Website
+
+
+    1 city, 100 hotels and you run a hotel website that ranks search by price
+    
+    Info: 
+    
+    Session, price and availability
+    
+    Question: 
+    
+    Propose a better ranking system
+    
+    Questions I would ask:
+    
+    What pages do users get stuck on?
+    Do users have to click from page to page to find available hotels?
+    
+    To make it statistically significant I would do one thing:
+    
+    Add a feature that allows for the customer to sort by availability after searching by price.
+    
+ 
+4. Social network
+
+    
+    3 years of data for users with and entry for every time they have logged in, including the timestamp and lenght of session
+    
+    Question:
+    
+    Find out why customers are churning
+    
+    To make it statistically significant I would do one thing:
+    
+    How does a users usage vary over different time periods?
+        30,60,90 days
+    Have customers always churned or are has there been consistent churn over the life of the data?
+    If there is a difference in the churn rate over time, when did it increase?
+    Did the users that churned sign up at a certain time?
+    Do users churn more or less if the spend more or less time on the network?
+ 
+ 
