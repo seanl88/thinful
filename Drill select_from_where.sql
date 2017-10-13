@@ -17,7 +17,7 @@ Select
 From
 	stations
 Where
-	station_id == 48
+	station_id == 84
 
 
 -- The min temperatures of all the occurrences of rain in zip 94301.
