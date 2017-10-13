@@ -3,7 +3,8 @@
 Select
 
     weather.Date,
-    MAX(MaxTemperatureF)
+    MAX(MaxTemperatureF),
+    weather.ZIP
 
 From
     
