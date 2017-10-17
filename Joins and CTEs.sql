@@ -18,16 +18,29 @@ Limit 3
 
 -- Which station is empty most often?
 
-Select
-	AVG(s.docks_available) as avg_docks_available,
-	s.station_id
-From
-	status s
-Group by
-	s.station_id
-Order by
-	avg_docks_available desc
-Limit 1
+With
+		empty_station
+As(
+	Select
+		AVG(s.docks_available) as avg_docks_available,
+		s.station_id
+	From
+		status s
+	Group by
+		s.station_id
+	Order by
+		avg_docks_available desc
+	Limit 1)
+select
+	e.avg_docks_available,
+	e.station_id,
+	s.name
+from
+	empty_station e
+join
+	stations s
+on
+	e.station_id = s.station_id
 
 
 -- Return a list of stations with a count of number of trips started at that station but ordered by dock count.
@@ -39,7 +52,7 @@ Select
 	count(t.trip_id) as trip_count
 From
 	trips t
-Join
+Left Join
 	stations s
 On
 	t.start_station = s.name
